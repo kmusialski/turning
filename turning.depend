@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1450539688 source:d:\filmy\projekty c++\turning\source files\main.cpp
+	"Turn.h"
+	"TABLE.h"
+
+1450466591 d:\filmy\projekty c++\turning\source files\turn.h
+
+1450471208 d:\filmy\projekty c++\turning\include\turn.h
+	<iostream>
+
+1450538150 source:d:\filmy\projekty c++\turning\src\turn.cpp
+	"Turn.h"
+
+1450558812 d:\filmy\projekty c++\turning\include\table.h
+	<cstdlib>
+	<iostream>
+
+1450634263 source:d:\filmy\projekty c++\turning\src\table.cpp
+	"TABLE.h"
+
