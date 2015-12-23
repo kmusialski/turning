@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1450695534 source:c:\users\kmusialski\downloads\cpp\turnings\src\turn.cpp
+	"Turn.h"
+
+1450678822 c:\users\kmusialski\downloads\cpp\turnings\include\turn.h
+	<iostream>
+
+1450770364 source:c:\users\kmusialski\downloads\cpp\turnings\src\table.cpp
+	"TABLE.h"
+
+1450679316 c:\users\kmusialski\downloads\cpp\turnings\include\table.h
+	<cstdlib>
+	<iostream>
+
+1450872123 source:c:\users\kmusialski\downloads\cpp\turnings\source files\main.cpp
+	<iostream>
+	"Turn.h"
+	"TABLE.h"
+	"SORT.h"
+
+1450871936 c:\users\kmusialski\downloads\cpp\turnings\include\sort.h
+	<iostream>
+	<cstdlib>
+
+1450872359 source:c:\users\kmusialski\downloads\cpp\turnings\src\sort.cpp
+	"SORT.h"
+

@@ -76,3 +76,4 @@ normalText(pTekst,arraySize);
 reverseText(pTekst,arraySize);
 
 }
+

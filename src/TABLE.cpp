@@ -3,26 +3,21 @@
 
 void greatestNumber(char *arrow,size_t arraySize)
 {
-    int y =0;
     int i = 0;
-    int t = 1000;
-    int z = 0;
+    int x = 1000000;
+    float t = x;
     int suma = 0;
     int wynik = 0;
 do{
     for (i; (i < arraySize);i++)
     {
-       if (z == 4){
-           i = i -3;
-           z = 0;
-            t = 1000;
+       if (t < 1){
+           i = i -6;
+            t = x;
             break;
         }
-        y = (arrow[i] - '0');
-        y = y*t;
+        suma = suma + ((arrow[i]- '0')*t);
         t=t/10;
-        suma = suma + y;
-        z++;
     }
     if(suma>=wynik){
         wynik=suma;
@@ -33,17 +28,21 @@ do{
 cout<<wynik<<endl;
 }
 
+int TABLE::digital(){
 
-int TABLE::digital(){cout<<wynik<<endl;
 
-
-char digits[] = "849211959925629991121231313215151515168484329995962323351921489494564894-5626185484999999915156151417415";
+char digits[] = "12345678912345867891234586789123456789";
 	//int maxNumber = 0;
 char *arrow = digits;
 size_t arraySize = sizeof(digits)/sizeof(digits[0]);
-greatestNumber(arrow,arraySize); // Na ekranie pojawi sie liczba 94857
+greatestNumber(arrow,arraySize); // Na ekranie pojawi sie liczba 24857
 
 
 return 0;
 }
+
+
+
+
+
 
