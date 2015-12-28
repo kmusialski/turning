@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstdlib>
+#include "list"
 
 #ifndef SORT_H
 #define SORT_H
@@ -9,12 +10,16 @@ using namespace std;
 
 class SORT
 {
+        private:
+        list<int> marks;
+        string name;
     public:
+        void setMarks(list<int> newMarks);
          int sorting();
+         int Transfer();
          void setName(string newName);
     protected:
-    private:
-        string name;
+
 };
 
 #endif // SORT_H

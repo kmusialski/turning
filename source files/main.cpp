@@ -2,12 +2,13 @@
 #include "Turn.h"
 #include "TABLE.h"
 #include "SORT.h"
-
+#include "ADDER.h"
 
 
 Turn createTURN();
 TABLE createTABLE();
 SORT createSORT(string name);
+ADDER createADDER();
 
 using namespace std;
 //string name
@@ -15,9 +16,22 @@ int main()
 {
 createTURN();
 createTABLE();
-SORT tabela1 = createSORT(" Wyniki totka ");
-SORT tabela2 = createSORT(" Wyniki multilotka ");
+
+ADDER suma = createADDER();
+suma.makeTable();
+suma.printTable();
+
 }
+
+ADDER createADDER(){
+    ADDER adder;
+    adder.addSubject(createSORT(" Wyniki totka "));
+    adder.addSubject(createSORT(" Wyniki multilotka "));
+    //adder.addSubject(createSORT(" Wyniki toto "));
+    return adder;
+}
+//SORT tabela1 = createSORT(" Wyniki totka ");
+//SORT tabela2 = createSORT(" Wyniki multilotka ");
 
 
 Turn createTURN(){

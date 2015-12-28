@@ -33,10 +33,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/ADDER.h" />
 		<Unit filename="include/SORT.h" />
 		<Unit filename="include/Table.h" />
 		<Unit filename="include/Turn.h" />
 		<Unit filename="source files/main.cpp" />
+		<Unit filename="src/ADDER.cpp" />
 		<Unit filename="src/SORT.cpp" />
 		<Unit filename="src/Table.cpp" />
 		<Unit filename="src/Turn.cpp" />

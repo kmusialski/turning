@@ -1,7 +1,10 @@
 #include "SORT.h"
 
 
-int *pom; //tablica pomocnicza, potrzebna przy scalaniu
+int *pom,*tab, n; //tablica pomocnicza, potrzebna przy scalaniu
+void SORT::setMarks(list<int> newMarks){
+    marks = newMarks;
+};
 
 //scalenie posortowanych podtablic
 void scal(int tab[], int lewy, int srodek, int prawy)
@@ -43,16 +46,31 @@ void sortowanie_przez_scalanie(int tab[],int lewy, int prawy)
   scal(tab, lewy, srodek, prawy);
 }
 
+int SORT::Transfer() //
+{
+    int mark;
+    for(int i = 0; i<= n; i++){
+
+        mark = tab[i];
+        marks.push_back(mark);
+    }
+
+    for (list<int>::iterator i = marks.begin(); i != marks.end(); ++i) {
+       cout << *i << " ";
+   }
+}
+
 int SORT::sorting()
 {
-  int *tab, n; //liczba elementów tablicy
-  cout<<"wprowadz ilosc elementow tablicy "<<name<<endl;
+   //liczba elementów tablicy
+   cout<<endl;
+  cout<<"Wprowadz ilosc elementow tablicy "<<name<<endl;
   cin>>n;
   tab = new int[n];
   pom = new int[n];
 
    //przydzielenie pamiêci na tablicê pomocnicz¹
-    cout<<"podaj elementy tej tablicy"<<name<<endl;
+    cout<<"Podaj elementy tej tablicy"<<name<<endl;
   //wczytanie elementów tablicy
   for(int i=0;i<n;i++)
     cin>>tab[i];
@@ -66,9 +84,11 @@ int SORT::sorting()
     cout<<tab[i]<<" ";
     cout<<endl;
 
-  system("pause");
-  return 0;
+    Transfer();
+ // system("pause");
+ return 0;
 }
+
 /*
 cout<<"podaj elementy tablicy 1"<<endl;
 cout<<"podaj elementy tablicy 2"<<endl;
