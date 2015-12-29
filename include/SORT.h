@@ -4,20 +4,20 @@
 
 #ifndef SORT_H
 #define SORT_H
-//www.algorytm.edu.pl
 
 using namespace std;
 
 class SORT
 {
         private:
-        list<int> marks;
         string name;
+        list<int> marks;
     public:
         void setMarks(list<int> newMarks);
          int sorting();
-         int Transfer();
+         list<int> Transfer();
          void setName(string newName);
+         void PrintMarks();
     protected:
 
 };

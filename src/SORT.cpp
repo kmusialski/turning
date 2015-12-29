@@ -2,9 +2,16 @@
 
 
 int *pom,*tab, n; //tablica pomocnicza, potrzebna przy scalaniu
-void SORT::setMarks(list<int> newMarks){
-    marks = newMarks;
-};
+int mark;
+
+void SORT::PrintMarks(){
+
+   // for (list<int>::iterator i = marks.begin(); i != marks.end(); ++i) {
+   //    cout << *i << " ";
+  //  }
+
+}
+
 
 //scalenie posortowanych podtablic
 void scal(int tab[], int lewy, int srodek, int prawy)
@@ -46,22 +53,18 @@ void sortowanie_przez_scalanie(int tab[],int lewy, int prawy)
   scal(tab, lewy, srodek, prawy);
 }
 
-int SORT::Transfer() //
+list<int> SORT::Transfer() //
 {
-    int mark;
-    for(int i = 0; i<= n; i++){
-
-        mark = tab[i];
-        marks.push_back(mark);
+    for(int i=0;i<n;i++){
+    mark = tab[i];
+    marks.push_back(mark);
     }
-
-    for (list<int>::iterator i = marks.begin(); i != marks.end(); ++i) {
-       cout << *i << " ";
-   }
+   return marks;
 }
 
 int SORT::sorting()
 {
+
    //liczba elementów tablicy
    cout<<endl;
   cout<<"Wprowadz ilosc elementow tablicy "<<name<<endl;
@@ -73,32 +76,24 @@ int SORT::sorting()
     cout<<"Podaj elementy tej tablicy"<<name<<endl;
   //wczytanie elementów tablicy
   for(int i=0;i<n;i++)
+  {
     cin>>tab[i];
-
+  }
   //sortowanie wczytanej tablicy
   sortowanie_przez_scalanie(tab,0,n-1);
 
   //wypisanie wyników
-  cout<<"Posortowany ciag znakow tablicy"<<name<<endl;
-  for(int i=0;i<n;i++)
-    cout<<tab[i]<<" ";
-    cout<<endl;
+ // cout<<"Posortowany ciag znakow tablicy"<<name<<endl;
+//  for(int i=0;i<n;i++)
+  //  cout<<tab[i]<<" ";
+ //   cout<<endl;
 
     Transfer();
+    PrintMarks();
  // system("pause");
  return 0;
 }
 
-/*
-cout<<"podaj elementy tablicy 1"<<endl;
-cout<<"podaj elementy tablicy 2"<<endl;
-
-  cout<<" wprowadz ilosc elementow tablicy 2"<<endl;
-  //przydzielenie pamiêci na tablicê liczb
-  cin>>p
-  tab2 = new int[p];
-  pom2 = new int[p];
- */
 
  void SORT::setName(string newName) {
     name = newName;

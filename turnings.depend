@@ -12,27 +12,27 @@
 	<cstdlib>
 	<iostream>
 
-1451310414 source:c:\users\kmusialski\downloads\cpp\turnings\source files\main.cpp
+1451379951 source:c:\users\kmusialski\downloads\cpp\turnings\source files\main.cpp
 	<iostream>
 	"Turn.h"
 	"TABLE.h"
 	"SORT.h"
 	"ADDER.h"
 
-1451304109 c:\users\kmusialski\downloads\cpp\turnings\include\sort.h
+1451381529 c:\users\kmusialski\downloads\cpp\turnings\include\sort.h
 	<iostream>
 	<cstdlib>
 	"list"
 
-1451311148 source:c:\users\kmusialski\downloads\cpp\turnings\src\sort.cpp
+1451396091 source:c:\users\kmusialski\downloads\cpp\turnings\src\sort.cpp
 	"SORT.h"
 
-1451304494 c:\users\kmusialski\downloads\cpp\turnings\include\adder.h
+1451379938 c:\users\kmusialski\downloads\cpp\turnings\include\adder.h
 	"list"
 	"iostream"
 	"SORT.h"
 
-1451307096 source:c:\users\kmusialski\downloads\cpp\turnings\src\adder.cpp
+1451395713 source:c:\users\kmusialski\downloads\cpp\turnings\src\adder.cpp
 	"ADDER.h"
 	"SORT.h"
 

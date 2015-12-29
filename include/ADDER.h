@@ -11,11 +11,9 @@ class ADDER {
 
 private:
 list<SORT> sorts;
-list<int> marks;
 
 public:
-	void addSubject(SORT sub);
-	void setMarks(list<int> newMarks);
+	void addTable(SORT sub);
 	float makeTable();
 	void printTable();
 

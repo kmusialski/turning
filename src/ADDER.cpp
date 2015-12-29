@@ -1,38 +1,69 @@
 #include "ADDER.h"
 #include "SORT.h"
 
-int result =0;
+list<int>result;
+list<int>result2;
 
-void ADDER::addSubject(SORT sub)
+//list<int>::iterator i;
+void ADDER::addTable(SORT sub)
 {
 	sorts.push_back(sub);
 }
-void ADDER::setMarks(list<int> newMarks){
-    marks = newMarks;
-};
+
 
 float ADDER::makeTable()
 {
-	for (list<SORT>::iterator i = sorts.begin(); i != sorts.end(); ++i) {
+
+	for (list<SORT>::iterator i = sorts.begin(); i != sorts.end(); i++) {
+
+        if(i == sorts.begin()) {
+           result =  (i->Transfer());
+        }
+        else{
+            result2 =  (i->Transfer());
+        }
+
+	}
+
+    //for (list<SORT>::iterator i = sorts.begin(); i != sorts.end(); ++i) {
 
 
 
-   // for (list<int>::iterator j = marks.begin(); j != marks.end(); ++j) {
-  //      cout << *j << " ";
+
+
+
+
+  //  for (list<int>::iterator j = marks.begin(); j != marks.end(); ++j) {
+   //     cout << *j << " ";
   //  }
  //  cout<<i->Transfer();
   //result = i->Transfer();
-    }
-return 0;
+
+
+	 return 0;
  }
 
 
-
 void ADDER::printTable() {
+
+
+    cout<<endl;
+    for (list<int>::iterator j = result.begin(); j != result.end(); ++j){
+
+        cout << *j << " ";
+    }
+    cout<<endl;
+   // for (list<int>::iterator j = result2.begin(); j != result2.end(); ++j){
+
+  //      cout << *j << " ";
+   // }
+
+
+
     cout<<endl;
     cout << "Sumaryczna ilosc losowan"<<endl;
 
-    cout<<sorts.size();
+    cout<<sorts.size()<<endl;
     // tu byl b³ad bo wyrzuca³ wynik funkcji calculate
 
 }
