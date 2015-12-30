@@ -18,6 +18,7 @@ createTABLE();
 
 ADDER suma = createADDER();
 suma.makeTable();
+suma.convertTable();
 suma.printTable();
 
 }
@@ -26,7 +27,7 @@ ADDER createADDER(){
     ADDER adder;
     adder.addTable(createSORT(" Wyniki totka "));
     adder.addTable(createSORT(" Wyniki multilotka "));
-    //adder.addSubject(createSORT(" Wyniki toto "));
+    adder.addTable(createSORT(" Wyniki toto "));
     return adder;
 }
 

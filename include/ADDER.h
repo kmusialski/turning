@@ -1,5 +1,6 @@
 #include "list"
 #include "iostream"
+#include <algorithm>
 #include "SORT.h"
 
 #ifndef TEST2_NOTE_H
@@ -15,6 +16,7 @@ list<SORT> sorts;
 public:
 	void addTable(SORT sub);
 	float makeTable();
+	void convertTable();
 	void printTable();
 
 };

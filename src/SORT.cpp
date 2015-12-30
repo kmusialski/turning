@@ -55,10 +55,17 @@ void sortowanie_przez_scalanie(int tab[],int lewy, int prawy)
 
 list<int> SORT::Transfer() //
 {
+    // Przekazanie poszczegolnych tablic w postaci listy
     for(int i=0;i<n;i++){
     mark = tab[i];
     marks.push_back(mark);
     }
+    for (list<int>::iterator j = marks.begin(); j != marks.end(); ++j){
+            cout<<*j<<"d"<<endl;
+    }
+
+    cout<<endl;
+    cout<<endl;
    return marks;
 }
 
@@ -82,19 +89,17 @@ int SORT::sorting()
   //sortowanie wczytanej tablicy
   sortowanie_przez_scalanie(tab,0,n-1);
 
-  //wypisanie wyników
- // cout<<"Posortowany ciag znakow tablicy"<<name<<endl;
-//  for(int i=0;i<n;i++)
-  //  cout<<tab[i]<<" ";
- //   cout<<endl;
-
+/*wypisanie wyników
+cout<<"Posortowany ciag znakow tablicy"<<name<<endl;
+for(int i=0;i<n;i++)
+cout<<tab[i]<<" ";
+cout<<endl;
+*/
     Transfer();
     PrintMarks();
  // system("pause");
  return 0;
 }
-
-
  void SORT::setName(string newName) {
     name = newName;
 }
